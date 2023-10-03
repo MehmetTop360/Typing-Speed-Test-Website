@@ -1,4 +1,5 @@
 # Typing Speed Test Website
+**Module 2, Sprint 2 of Turing College**
 
 ## Overview
 The Typing Speed Test Website is a website that enables users to evaluate their typing proficiency by measuring both speed and accuracy. Users are presented with a piece of text retrieved from a public API or a custom JSON collection. They must type the displayed text within a 60-second timeframe, after which their results, including words-per-minute (WPM) and accuracy percentages, are presented. This task was done as a solution for Sprint 2 of Module 2 at Turing College.
