@@ -1,0 +1,135 @@
+.stats-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.table-container {
+    flex: 1;
+    overflow-x: auto;
+    padding-top: 30px;
+}
+
+table {
+
+    margin: auto;
+    border-collapse: collapse;
+    border-color: #8d8873;
+    width: 60%;
+    text-align: center;
+}
+
+td,
+th {
+    padding: 15px;
+    border: 1px solid #8d8873;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.game-button {
+    outline: none;
+    border: none;
+    width: 155px;
+    height: auto;
+    color: #fff;
+    padding: 18px 0;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    background: #af695f;
+    transition: transform 0.3s ease;
+    position: relative;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+button:active {
+    transform: scale(0.90) translateX(-55%);
+}
+
+button:hover {
+    transition: transform 0.3s ease;
+    filter: brightness(110%);
+}
+
+table .datetime {
+    color: #107a02;
+}
+
+table .wpm {
+    color: #bba226;
+}
+
+table .accuracy {
+    color: #d22a2a;
+}
+
+table .timeleft {
+    color: #021547;
+}
+
+@media (max-width: 745px) {
+    .stats-container {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .table-container {
+        padding-top: none;
+    }
+
+    table {
+        width: 80%;
+    }
+
+    td,
+    th {
+        font-size: 17px;
+        padding: 6px;
+    }
+
+    .game-button {
+        margin-top: 16px;
+        width: 120px;
+        padding: 8px 0;
+        font-size: 18px;
+    }
+
+}
+
+@media (max-width: 518px) {
+    table {
+        width: 90%;
+    }
+
+    td,
+    th {
+        font-size: 15px;
+        padding: 3px;
+    }
+
+    .game-button {
+        margin-top: 8px;
+        width: 100px;
+        padding: 8px 0;
+        font-size: 15px;
+    }
+}
